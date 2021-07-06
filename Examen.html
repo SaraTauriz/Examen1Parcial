@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar 100 números</title>
+</head>
+<body>
+
+    <button id="G" style="display: block;" onclick="GenerarNum()">Generar 100 botones</button>
+    <a id = "v" style="display: none;"></a>
+
+</body>
+</html>
+
+<script>
+
+    function GenerarNum()
+    {
+        document.getElementById("G").style = "display: none;"
+        var i = 0;
+
+        for (let index = 1; index < 101; index++) 
+        {
+            
+            let num = document.createElement(id = "button");
+            num.innerHTML = index;
+            document.body.appendChild(num);
+            if(index%7 == 0)
+            {
+                i++;
+            }
+            
+            
+        }
+        var mul = document.createElement(id = "p");
+        mul.innerHTML = ("La cantidad de números múltiplos de 7 son: " + i);
+
+        document.body.appendChild(mul);
+    }
+
+</script>
